@@ -1,0 +1,251 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration:  none !important;
+}
+
+/******* Navigation ********/
+.navbar{
+    padding: 22px 0;
+    background-color: #be1903 !important;
+    border-bottom: none!important;
+}
+.navbar ul li a{
+    color: white  !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: all 0.5s ease-in;
+}
+.navbar ul li a:hover{
+    color: black !important;
+
+}
+.navbar-toggle{
+    border: 1px solid white !important;
+    transition: all 0.5s ease-in;
+}
+.navbar-toggle:hover{
+    background-color: #be1903;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: white !important;
+}
+/********Banner******/
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    animation: scale 25s;
+    
+}
+@keyframes scale {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    top: 39%;
+    width: 100%;
+}
+.icons .fa{
+    font-size: 35px ;
+    margin-top: 7px;
+   
+}
+.cta-div{
+    margin-top: 30px;
+}
+.btn1{
+    padding: 13px 30px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: 1px;
+}
+.btn2{
+    padding: 13px 30px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: 1px;
+}
+.btn1:hover{
+    background-color: #be1903;
+    color: white;
+}
+.btn2:hover{
+    background-color: #031fbe;
+    color: white;
+}
+/*******Conocemos servicios****/
+.service-area{
+    padding: 10rem 0 2rem;
+    margin-top: 30px;
+}
+.service-area p{
+    margin-bottom: -5px;
+}
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+.service-wrap:hover{
+    background:#be1903;
+   color: #fff;
+}
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+/*****Productos********/
+.productos{
+    padding: 10rem 0 2rem;
+    margin-top: 30px;
+    background-image: url(../img/fondo_productos.jpg);
+}
+.productos .section-title h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+}
+.productos .section-title p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff!important;
+    padding: 7px 0;
+    background-color: #be1903;
+}
+.card img{
+    box-shadow: 10px 5px 5px black;
+}
+.card-body{
+    padding: 10px 0;
+}
+.card-body .card-text{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    list-style: 1px;
+}
+.card-body .text-primary{
+    box-shadow:10px 5px 0px black ;
+    color: #fff;
+    font-size: 20px;
+}
+.card-body .btn-primary{
+    background: #be1903;
+    color: black;
+}
+/**********Pedido*****/
+.pedidos{
+    padding: 10rem 0 2rem;
+    margin-top: 30px;
+}
+.table_productos > img{
+    width: 9rem;
+    object-fit:contain ;
+    border-radius: 6px;
+    margin-right:20px;
+}
+.table_cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/******Postres*******/
+
+#postres{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/postres.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: #fff ;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.postres{
+    margin-top: 40px;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto ;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border: 1ox solid #031fbe;
+}
+#postres p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.postres .col-md-3:hover{
+    background: #be1903;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*******Contacto*****/
+.contacto{
+    padding: 7rem 0 2rem;
+   
+}
+
